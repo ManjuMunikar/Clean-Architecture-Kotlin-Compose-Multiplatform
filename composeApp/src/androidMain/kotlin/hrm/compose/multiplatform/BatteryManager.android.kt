@@ -14,5 +14,6 @@ actual class BatteryManager(private val context: Context) {
         val level = batteryStatus?.getIntExtra(BatteryManager.EXTRA_LEVEL, -1) ?: -1
         val scale = batteryStatus?.getIntExtra(BatteryManager.EXTRA_SCALE, -1) ?: -1
 
-        return (level / scale.toFloat() * 100).roundToInt()    }
+        return (level / scale.toFloat() * 100).roundToInt()
+    }
 }

@@ -8,5 +8,6 @@ actual class BatteryManager {
         val systemInfo = SystemInfo()
         val batteryLevel = systemInfo.hardware.powerSources.firstOrNull()
 
-        return batteryLevel?.remainingCapacityPercent?.times(100)?.roundToInt() ?: -1    }
+        return batteryLevel?.remainingCapacityPercent?.times(100)?.roundToInt() ?: -1
+    }
 }
